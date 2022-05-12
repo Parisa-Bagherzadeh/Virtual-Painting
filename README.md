@@ -1,5 +1,5 @@
 
-This is a virtual painting program using MediaPipe framework</br>
+This is a virtual painting program using MediaPipe framework and opencv</br>
 There are three colors can be selected:</br>
 * Green (default color)</br>
 * Red </br>
