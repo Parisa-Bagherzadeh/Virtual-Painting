@@ -1,7 +1,7 @@
 from unittest import result
 import cv2
 import mediapipe as mp
-import time
+
 
 
 class handDetector():
@@ -65,8 +65,7 @@ mpDraw=mp.solutions.drawing_utils
 
 
 def main():
-    # pTime=0 #previous time
-    # cTime=0 #current time
+  
     cap=cv2.VideoCapture(0)
     detector=handDetector()
 
@@ -74,8 +73,7 @@ def main():
         success,img=cap.read()
         img=detector.findHands(img)
         lmsList=detector.findPosition(img)
-        # if len(lmsList)!=0:
-        #     print(lmsList[8])
+      
 
         cv2.imshow("Image",img)
         if cv2.waitKey(1) & 0xFF == ord('q'):
