@@ -4,7 +4,7 @@ from matplotlib.pyplot import draw
 import numpy as np
 import cv2
 import os
-import time
+
 
 from requests import head
 import HandTrackingModule as htm
